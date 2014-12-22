@@ -1,0 +1,92 @@
+The data available in file SamsungWearableAverageMeanSTD.txt is derived from accelerometer and gyroscope readings taken from Samsung galaxy smartphone, provided by 30 volunteers.
+The full details of the base data used to derive this file is available at the following URL
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+
+This particular data set used only the mean and standard deviation measures among the 561 time and frequency domain variable provided in the base data.
+The data finally derived is an average of the mean and standard deviation variables provided in the base data, for each of the subject and type of activity they did
+There are 30 participants and 6  activities , therefore the derived file contains 180 derived observations.
+The final data set also displays the label of activity and the subject identifier in each of the rows derived.
+
+The variables preserve the base data set names, except for the prefix of "Avg." to indicate that this is an average and not raw readings from base data.
+
+As explained in the base data documentation, the measure consists of time domain and frequency domain acceleration, jerk and angular velocity mesaurements
+Variables with prefix of "Avg. t" are time domain and those with "Avg. f" are frequency domain measurements.
+Unit of acceleration is g , unit of angular velocity is radians/s and unit of jerk is m/seconds^3.
+Those measurements from gyro are angular velocity.
+Those measurements along X,Y,X axis are shown, magnitude is the magnitude of measurement across all directions
+Those with mean in the name indicates the base observation was mean and std indicates the base measurement as standard deviation
+
+Field# FieldName    Description
+-------------------------------------
+Identifier fields
+-------------------
+1	subjectId       Identity of the subject , numeric, possible values 1 to 30 , for the 30 subjects           
+2	activityLabel   Activity performed by the subject, char, possible values are LAYING,SITTING,STANDING,WALKING,WALKING_DOWNSTAIRS,WALKING_UPSTAIRS 
+Measure Variables, all numeric and they are explained above for their unit and meaning
+--------------------------------------------------------------------------------------
+3	Avg. tBodyAcc-mean()-X 
+4	Avg. tBodyAcc-mean()-Y 
+5	Avg. tBodyAcc-mean()-Z 
+6	Avg. tBodyAcc-std()-X 
+7	Avg. tBodyAcc-std()-Y 
+8	Avg. tBodyAcc-std()-Z
+9	 Avg. tGravityAcc-mean()-X 
+10	 Avg. tGravityAcc-mean()-Y 
+11	 Avg. tGravityAcc-mean()-Z 
+12	 Avg. tGravityAcc-std()-X 
+13	 Avg. tGravityAcc-std()-Y 
+14	 Avg. tGravityAcc-std()-Z 
+15	 Avg. tBodyAccJerk-mean()-X    
+16	 Avg. tBodyAccJerk-mean()-Y 
+17	 Avg. tBodyAccJerk-mean()-Z 
+18	 Avg. tBodyAccJerk-std()-X 
+19	 Avg. tBodyAccJerk-std()-Y 
+20	 Avg. tBodyAccJerk-std()-Z 
+21	 Avg. tBodyGyro-mean()-X 
+22	 Avg. tBodyGyro-mean()-Y
+23	 Avg. tBodyGyro-mean()-Z 
+24	 Avg. tBodyGyro-std()-X 
+25	 Avg. tBodyGyro-std()-Y 
+26	 Avg. tBodyGyro-std()-Z 
+27	 Avg. tBodyGyroJerk-mean()-X 
+28	 Avg. tBodyGyroJerk-mean()-Y 
+29	 Avg. tBodyGyroJerk-mean()-Z
+30	 Avg. tBodyGyroJerk-std()-X 
+31	 Avg. tBodyGyroJerk-std()-Y 
+32	 Avg. tBodyGyroJerk-std()-Z 
+33	 Avg. tBodyAccMag-mean() 
+34	 Avg. tBodyAccMag-std() 
+35	 Avg. tGravityAccMag-mean() 
+36	 Avg. tGravityAccMag-std()
+37	 Avg. tBodyAccJerkMag-mean() 
+38	 Avg. tBodyAccJerkMag-std() 
+39	 Avg. tBodyGyroMag-mean() 
+40	 Avg. tBodyGyroMag-std() 
+41	 Avg. tBodyGyroJerkMag-mean() 
+42	 Avg. tBodyGyroJerkMag-std() 
+43	 Avg. fBodyAcc-mean()-X
+44	 Avg. fBodyAcc-mean()-Y 
+45	 Avg. fBodyAcc-mean()-Z 
+46	 Avg. fBodyAcc-std()-X 
+47	 Avg. fBodyAcc-std()-Y 
+48	 Avg. fBodyAcc-std()-Z 
+49	 Avg. fBodyAccJerk-mean()-X 
+50	 Avg. fBodyAccJerk-mean()-Y 
+51	 Avg. fBodyAccJerk-mean()-Z      
+52	 Avg. fBodyAccJerk-std()-X 
+53	 Avg. fBodyAccJerk-std()-Y 
+54	 Avg. fBodyAccJerk-std()-Z 
+55	 Avg. fBodyGyro-mean()-X 
+56	 Avg. fBodyGyro-mean()-Y 
+57	 Avg. fBodyGyro-mean()-Z
+58	 Avg. fBodyGyro-std()-X
+59	 Avg. fBodyGyro-std()-Y 
+60	 Avg. fBodyGyro-std()-Z 
+61	 Avg. fBodyAccMag-mean() 
+62	 Avg. fBodyAccMag-std() 
+63	 Avg. fBodyBodyAccJerkMag-mean() 
+64	 Avg. fBodyBodyAccJerkMag-std() 
+65	 Avg. fBodyBodyGyroMag-mean()  
+66	 Avg. fBodyBodyGyroMag-std() 
+67	 Avg. fBodyBodyGyroJerkMag-mean() 
+68	 Avg. fBodyBodyGyroJerkMag-std()
